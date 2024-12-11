@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFC0CB, #FF69B4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            animation: float 10s infinite ease-in-out;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0% {
+                opacity: 0;
+                transform: translate(var(--start-x), var(--start-y));
+            }
+            50% {
+                opacity: 1;
+                transform: translate(var(--end-x), var(--end-y));
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--start-x), var(--start-y));
+            }
+        }
+        .container {
+            width: 80%;
+            max-width: 600px; /* Fixed width */
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify; /* Align text for readability */
+            color: #fff;
+        }
+
+        button {
+            background: #fff;
+            color: #FF69B4;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #FF69B4;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>
+            I'm a computing technology student. I have a slight interest in transofrming innocative ideas, functional solutions. With slight recognition in languages as HTML, CSS and Javascript. I thrive in high pressure environments and to continuously expanding my skill set and I enjoy collaborating in teams. 
+            Outside of class i have hobbies such as going out to new places, playing games, and sleeping.
+        </p>
+        <button onclick="navigate('Home.html')">Back to Home</button>
+    </div>
+    <script>
+        function navigate(url) {
+            location.href = url;
+        }
+    </script>
+</body>
+</html>

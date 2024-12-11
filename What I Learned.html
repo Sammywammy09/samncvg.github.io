@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Learned This Year</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFC0CB, #FF69B4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px; /* Fixed width */
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify; /* Align text for readability */
+            color: #fff;
+        }
+
+        button {
+            background: #fff;
+            color: #FF69B4;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #FF69B4;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What I Learned This Year</h1>
+        <p>
+            This year has been a journey of growth and discovery. I've learned how to adapt to challenges 
+            and embrace new opportunities. Some of the key lessons I've gained include:
+        </p>
+        <ul style="text-align: left; margin-top: 20px; line-height: 1.6; padding-left: 20px;">
+            <li>I learned the basics of programming, like using variables, loops, and conditions to write simple programs.</li>
+            <li>I started learning about web development by making basic web pages using HTML and CSS, and I learned a little bit of JavaScript to add some features.</li>
+            <li>I got to work with Figma, a design tool, to create digital designs and prototypes, which helped me understand the design process.</li>
+            <li>I learned how to make a portfolio, where I collected and showcased my work, including projects and designs, to highlight my skills.</li>
+        </ul>
+        <p>
+            I'm thankful for the opportunity to complete a year of this elective. 
+        </p>
+        <button onclick="navigate('Home.html')">Back to Home</button>
+    </div>
+    <script>
+        function navigate(url) {
+            location.href = url;
+        }
+    </script>
+</body>
+</html>

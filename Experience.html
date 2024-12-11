@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFC0CB, #FF69B4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 150vh;
+            color: #fff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .project h2 {
+            color: #fff;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .project p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .project img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background: #fff;
+            color: #FF69B4;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #FF69B4;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Experience</h1>
+        <div class="project">
+            <h2>First Project: Medium Fidelity Webpage of Study Sync</h2>
+            <p>Getting familiar with Figma and UI interfaces.</p>
+            <img src="c:\Users\sverg\Samncvg\Figma StudySync.png" alt="Project Image">
+        </div>
+
+        <div class="project">
+            <h2>Second Project: Webpage of StudySync</h2>
+            <p>Created a user-friendly webpage to combat procrastination in students via HTML.</p>
+            <img src="c:\Users\sverg\Samncvg\StudySync.jpeg.png" alt="Project Image">
+        </div>
+
+        <div class="project">
+            <h2>Third Project: Climate Change Awareness Game (EcoWarrior)</h2>
+            <p>Leaned into improving coding efficiency and saving user input.</p>
+            <img src="c:\Users\sverg\Samncvg\EcoWarrior.png" alt="Project Image">
+        </div>
+
+        <button onclick="navigate('Home.html')">Back to Home</button>
+    </div>
+    <script>
+        function navigate(url) {
+            location.href = url;
+        }
+    </script>
+</body>
+</html>
+
